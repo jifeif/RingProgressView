@@ -15,6 +15,8 @@
 		0FDB2EC21CC0EA9B00D05221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FDB2EC01CC0EA9B00D05221 /* LaunchScreen.storyboard */; };
 		0FDB2ECD1CC0EA9B00D05221 /* RingProgressViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDB2ECC1CC0EA9B00D05221 /* RingProgressViewTests.m */; };
 		0FDB2ED81CC0EA9B00D05221 /* RingProgressViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDB2ED71CC0EA9B00D05221 /* RingProgressViewUITests.m */; };
+		0FDB2EE81CC0EAD600D05221 /* CCRingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDB2EE71CC0EAD600D05221 /* CCRingView.m */; };
+		0FEADE981CC48193002C0194 /* CCGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEADE971CC48193002C0194 /* CCGradientView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		0FDB2ED31CC0EA9B00D05221 /* RingProgressViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RingProgressViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FDB2ED71CC0EA9B00D05221 /* RingProgressViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RingProgressViewUITests.m; sourceTree = "<group>"; };
 		0FDB2ED91CC0EA9B00D05221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FDB2EE61CC0EAD600D05221 /* CCRingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRingView.h; sourceTree = "<group>"; };
+		0FDB2EE71CC0EAD600D05221 /* CCRingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRingView.m; sourceTree = "<group>"; };
+		0FEADE961CC48193002C0194 /* CCGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGradientView.h; sourceTree = "<group>"; };
+		0FEADE971CC48193002C0194 /* CCGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCGradientView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,7 @@
 				0FDB2EB81CC0EA9B00D05221 /* ViewController.h */,
 				0FDB2EB91CC0EA9B00D05221 /* ViewController.m */,
 				0FDB2EBB1CC0EA9B00D05221 /* Main.storyboard */,
+				0FDB2EE51CC0EABA00D05221 /* RingProgress */,
 				0FDB2EBE1CC0EA9B00D05221 /* Assets.xcassets */,
 				0FDB2EC01CC0EA9B00D05221 /* LaunchScreen.storyboard */,
 				0FDB2EC31CC0EA9B00D05221 /* Info.plist */,
@@ -138,6 +145,18 @@
 				0FDB2ED91CC0EA9B00D05221 /* Info.plist */,
 			);
 			path = RingProgressViewUITests;
+			sourceTree = "<group>";
+		};
+		0FDB2EE51CC0EABA00D05221 /* RingProgress */ = {
+			isa = PBXGroup;
+			children = (
+				0FDB2EE61CC0EAD600D05221 /* CCRingView.h */,
+				0FDB2EE71CC0EAD600D05221 /* CCRingView.m */,
+				0FEADE961CC48193002C0194 /* CCGradientView.h */,
+				0FEADE971CC48193002C0194 /* CCGradientView.m */,
+			);
+			name = RingProgress;
+			path = Base.lproj/RingProgress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +289,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FEADE981CC48193002C0194 /* CCGradientView.m in Sources */,
+				0FDB2EE81CC0EAD600D05221 /* CCRingView.m in Sources */,
 				0FDB2EBA1CC0EA9B00D05221 /* ViewController.m in Sources */,
 				0FDB2EB71CC0EA9B00D05221 /* AppDelegate.m in Sources */,
 				0FDB2EB41CC0EA9B00D05221 /* main.m in Sources */,
@@ -412,6 +433,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RingProgressView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.9188.RingProgressView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RingProgressView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.9188.RingProgressView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +519,7 @@
 				0FDB2EDE1CC0EA9B00D05221 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FDB2EDF1CC0EA9B00D05221 /* Build configuration list for PBXNativeTarget "RingProgressViewTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +528,7 @@
 				0FDB2EE11CC0EA9B00D05221 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FDB2EE21CC0EA9B00D05221 /* Build configuration list for PBXNativeTarget "RingProgressViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +537,7 @@
 				0FDB2EE41CC0EA9B00D05221 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
