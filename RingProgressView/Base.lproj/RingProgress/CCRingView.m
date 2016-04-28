@@ -47,8 +47,9 @@
     _radius = (_radius > 0 && (_radius <= self.bounds.size.height / 2)) ? _radius : self.bounds.size.height / 2;
     _radius = (_ringWidth > 1) ? (_radius - _ringWidth / 2.0) : _radius;
     
-    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:centerPoint radius:_radius startAngle:_startAngle endAngle:_endAngle clockwise:YES];
     
+    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:centerPoint radius:_radius startAngle:_startAngle endAngle:_endAngle clockwise:YES];
+        
     for (int i = 0; i < self.ratioArr.count; i++) {
         CAShapeLayer * shapeLayer = [CAShapeLayer layer];
         shapeLayer.bounds = self.bounds;

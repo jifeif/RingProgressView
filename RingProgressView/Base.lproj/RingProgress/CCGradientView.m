@@ -20,13 +20,6 @@
 
 - (void)awakeFromNib{
     _centerPoint = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2);
-    
-//    CABasicAnimation *basi = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
-//    basi.repeatCount = MAXFLOAT;
-//    basi.duration = 1;
-//    basi.fromValue = @(0);
-//    basi.toValue = @(M_PI * 2);
-//    [_gradientLayer addAnimation:basi forKey:nil];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
